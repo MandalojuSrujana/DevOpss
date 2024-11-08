@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Concert Registration Form</title>
+    <style>
+    .registration-form1 {
+    background-image: url('concerts.jpg'); /* Replace with the actual path to your image */
+    width:100vw;
+    height:100vh;
+}
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .registration-form {
+            
+            background-color:color-mix(in hsl shorter hue, lightblue 50%, pink 50%);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        .registration-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-form1">
+        <h2 style="text-shadow: #333;color:rgb(215, 244, 52);text-align: center;font-size:50px;font-family: cursive;">Musical Feista</h2>
+    
+        <div class="registration-form">
+            <h2>Registration</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <select id="date" name="date" required>
+                        <option value="day1">01-09-2024</option>
+                        <option value="day2">02-09-2024</option>
+                        <option value="day3">03-09-2024</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ticket">Ticket Type</label>
+                    <select id="ticket" name="ticket" required>
+                        <option value="regular">Regular - $50</option>
+                        <option value="vip">VIP - $100</option>
+                        <option value="vvip">VVIP - $150</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+        
+</body>
+</html>
